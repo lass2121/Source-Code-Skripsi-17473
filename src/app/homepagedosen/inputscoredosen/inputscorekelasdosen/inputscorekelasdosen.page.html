@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homepagedosen/inputscoredosen"></ion-back-button>
+   </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-card>
+        <ion-card>
+        <ion-row>
+          <ion-col>
+           <ion-item>
+             mahasiswa 1
+             <br>
+             00000012222
+           </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-card>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title class="ion-text-center">Semester Ganjil 2020/2021</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-card [routerLink]="['./','IF602-WWW']"> 
+                <ion-item>
+                  IF602-WWW
+                </ion-item>
+              </ion-card>
+              <ion-card [routerLink]="['./','IF602-XXX']">
+                <ion-item>
+                  IF602-XXX
+                </ion-item>
+              </ion-card>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>

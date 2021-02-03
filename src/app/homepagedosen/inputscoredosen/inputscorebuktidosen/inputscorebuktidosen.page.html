@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homepagedosen/inputscoredosen"></ion-back-button>
+   </ion-buttons>
+    <ion-title class="ion-text-center">SCORING</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          NAMA MAHASISWA
+          <br>
+          00000012345
+          <br>
+          IF602-XXX
+          <br>
+          PERTEMUAN KE-XXX
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-card *ngFor="let entry of form"> 
+    <ion-item>
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-card>
+        <ion-label>{{entry.scor}}</ion-label>
+      </ion-card>
+      <button item-right (click)='test()'>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-card>
+  </ion-list>
+  <ion-card>
+    <ion-card-content class="ion-text-center">
+      Score : -25
+    </ion-card-content>
+  </ion-card>
+  <ion-row>
+    <ion-col>
+      <p class="ion-text-center">
+        ANY PROOF ABOUT SCORING?
+      </p>
+    </ion-col>
+  </ion-row>
+  <ion-button (click)="upload()" expand="full">Upload File</ion-button>
+  <ion-button (click)="submit()" style="float:right; margin-top:10px; margin-right: 10px;" type="submit" color="success">Submit</ion-button>
+</ion-content>

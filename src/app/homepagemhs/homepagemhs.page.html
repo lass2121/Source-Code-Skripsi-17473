@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">MONITORING</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goBack()"><ion-icon name='log-out' slot="icon-only"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title class="ion-text-center">Semester 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item [routerLink]="['./','kekw']">
+                IF602-WWW
+              </ion-item>
+              <ion-item [routerLink]="['./','kekw']">
+                IF602-XXX
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-button expand="block">Semester Sebelumnya</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

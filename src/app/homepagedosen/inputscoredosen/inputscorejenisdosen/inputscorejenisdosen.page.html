@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homepagedosen/inputscoredosen"></ion-back-button>
+   </ion-buttons>
+    <ion-title class="ion-text-center">SCORING</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          NAMA MAHASISWA
+          <br>
+          00000012345
+          <br>
+          IF602-XXX
+          <br>
+          PERTEMUAN KE-XXX
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-card *ngFor="let entry of form"> 
+    <ion-item>
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-card>
+        <ion-label>{{entry.scor}}</ion-label>
+      </ion-card>
+      <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-card>
+  </ion-list>
+  <ion-card>
+    <ion-card-content class="ion-text-center">
+      Score : 60
+    </ion-card-content>
+  </ion-card>
+  <ion-button [routerLink]="['./','60']" expand="block">Konfirmasi</ion-button>
+</ion-content>

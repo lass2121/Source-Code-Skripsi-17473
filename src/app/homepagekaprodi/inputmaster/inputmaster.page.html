@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/homepagekaprodi"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-card>
+      <ion-card-title class="ion-text-center">INPUT MASTER</ion-card-title>
+      <ion-card>
+        <ion-item>
+          <ion-label position="stacked">Score Name</ion-label>
+          <ion-input type="text" formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="validationName">
+          <ion-text color="danger">Please enter a valid Name</ion-text>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-label position="stacked">Score Point</ion-label>
+          <ion-input type="number" formControlName="point"></ion-input>
+        </ion-item>
+        <ion-item lines="none" *ngIf="validationPoint">
+          <ion-text color="danger">Please enter a valid Point</ion-text>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+          <ion-label position="stacked">Score Description </ion-label>
+          <ion-textarea formControlName="desc"></ion-textarea>
+        </ion-item>
+        <ion-item lines="none" *ngIf="validationDesc">
+          <ion-text color="danger">Please enter a valid Description</ion-text>
+        </ion-item>
+      </ion-card>
+      <ion-button
+        (click)="onSubmit()"
+        style="
+          float: right;
+          margin-right: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        "
+        color="success"
+        type="submit"
+        >Submit</ion-button
+      >
+    </ion-card>
+  </form>
+  <ion-card>
+    <ion-list>
+      <ion-card>
+        <ion-item> Score 1 </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item> Score 1 </ion-item>
+      </ion-card>
+    </ion-list>
+  </ion-card>
+</ion-content>
