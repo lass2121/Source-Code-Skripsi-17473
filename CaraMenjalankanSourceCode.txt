@@ -1,0 +1,21 @@
+*Untuk akses melalui Local
+1. Download tools seperti TOAD ORACLE, OpenVPN GUI, XAMPP, file PHP
+2. Dapatkan privillage database, vpn melalui IT UMN
+3. Dapatkan akses mendownload file PHP melalui IT UMN
+4. Apabila semua sudah terkonfigurasi, maka jalankan tools
+
+1. Download Node JS dan install
+2. Jalankan node js command prompt
+3. Pindahkan path ke path folder source code
+4. ketik npm i dan jalankan
+5. Tunggu sampai download selesai
+6. Ketik ionic serve dan jalankan
+
+*Untuk akses melalui API
+1. Download Node JS dan install
+2. Jalankan node js command prompt
+3. Pindahkan path ke path folder source code
+4. ketik npm i dan jalankan
+5. Tunggu sampai download selesai
+6. Ketik ionic serve dan jalankan
+
